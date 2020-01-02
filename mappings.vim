@@ -12,15 +12,15 @@ nnoremap q; q:
 inoremap <silent> jk <Esc>
 
 " Turn the word under cursor to upper case
-inoremap <silent> <c-u> <Esc>viwUea
+" inoremap <silent> <c-u> <Esc>viwUea
 
 " Turn the current word into title case
-inoremap <silent> <c-t> <Esc>b~lea
+" inoremap <silent> <c-t> <Esc>b~lea
 
 " Paste non-linewise text above or below current cursor,
 " see https://stackoverflow.com/a/1346777/6064933
-nnoremap <leader>p m`o<ESC>p``
-nnoremap <leader>P m`O<ESC>p``
+" nnoremap <leader>p m`o<ESC>p``
+" nnoremap <leader>P m`O<ESC>p``
 
 " Shortcut for faster save and quit
 nnoremap <silent> <leader>w :update<CR>
@@ -49,16 +49,6 @@ nnoremap <silent> \d :bprevious <bar> bdelete #<CR>
 
 " Toggle search highlight, see https://goo.gl/3H85hh
 nnoremap <silent><expr> <Leader>hl (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
-
-" Disable arrow key in vim, see https://goo.gl/s1yfh4.
-nnoremap <Up> <nop>
-nnoremap <Down> <nop>
-nnoremap <Left> <nop>
-nnoremap <Right> <nop>
-inoremap <Up> <nop>
-inoremap <Down> <nop>
-inoremap <Left> <nop>
-inoremap <Right> <nop>
 
 " Insert a blank line below or above current line (do not move the cursor),
 " see https://stackoverflow.com/a/16136133/6064933
